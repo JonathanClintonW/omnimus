@@ -38,3 +38,11 @@ body {
     color: transparent;
   }
 }
+
+.arrow-hover {
+  transition: transform 0.3s ease;
+}
+
+.hover-container:hover .arrow-hover {
+  transform: translateX(16px);
+}
