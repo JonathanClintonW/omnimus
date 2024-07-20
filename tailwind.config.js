@@ -13,15 +13,14 @@ module.exports = {
       },
       colors: {
         light_gray: '#B4B4B8',
+        dark_gray: '#373A40',
         turqoise: '#00a5a7',
         dark_turqoise: '#003C43',
         white: '#FFFFFF',
         black: '#000000',
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'turqoise-gradient': 'linear-gradient(to right, #00a5a7, #003C43)',
       },
     },
   },

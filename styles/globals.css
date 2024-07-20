@@ -30,4 +30,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .text-gradient-turquoise {
+    background-image: linear-gradient(to right, #003C43, #00a5a7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
