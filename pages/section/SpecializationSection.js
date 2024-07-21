@@ -44,17 +44,17 @@ const SpecializationSection = () => {
         {specializations.map((specialization) => (
           <div
             key={specialization.id}
-            className="grid grid-cols-1 gap-2 md:grid-cols-3 mb-8 border-b border-dark_gray pb-6"
+            className="grid grid-cols-1 gap-2 md:gap-8 md:grid-cols-3 mb-8 border-b border-dark_gray pb-6"
           >
             <div>
               <p className="font-semibold text-gray">{specialization.id}/</p>
               <h2 className="font-bold text-2xl">{specialization.title}</h2>
             </div>
-            <div>
+            <div className="flex items-center justify-center">
               <img
                 src={specialization.image}
                 alt={specialization.title}
-                className="w-full h-auto bg-cover"
+                className="w-full h-auto max-h-[400px] object-cover"
               />
             </div>
             <div>
