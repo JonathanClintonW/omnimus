@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+  
   return (
     <nav className="bg-white shadow-md rounded-md">
       <div className="flex justify-between gap-4 text-black bg-white px-4 rounded-md py-2 font-bold uppercase">
@@ -68,7 +72,7 @@ const Navbar = () => {
       >
         <div className="px-6 pt-4 pb-3 space-y-1 text-xl text-black dark:text-white flex flex-col gap-4 transition-all duration-500">
           <div className='py-4 border-b-2 flex justify-between'>
-            <Link href="/" passHref>
+            <Link href="/" passHref onClick={closeMenu}>
               <span className="font-bold uppercase cursor-pointer text-gradient-turquoise">Omnimus</span>
             </Link>
             <button onClick={toggleMenu}>
@@ -90,16 +94,16 @@ const Navbar = () => {
 
           </div>
 
-          <Link href="/projects">
+          <Link href="/projects" onClick={closeMenu}>
             <span className="font-semibold uppercase cursor-pointer">Projects</span>
           </Link>
-          <Link href="/clients">
+          <Link href="/clients" onClick={closeMenu}>
             <span className="font-semibold uppercase cursor-pointer">Clients</span>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" onClick={closeMenu}>
             <span className="font-semibold uppercase cursor-pointer">Contact</span>
           </Link>
-          <div className='font-semibold'>
+          <div className='font-semibold' onClick={closeMenu}>
             <DarkModeToggle />
           </div>
 
