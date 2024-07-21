@@ -15,7 +15,7 @@ const Navbar = () => {
   
   return (
     <nav className="bg-white shadow-md rounded-md">
-      <div className="flex justify-between gap-4 text-black bg-white px-4 rounded-md py-2 font-bold uppercase">
+      <div className="flex justify-between gap-4 text-black bg-white px-4 rounded-md py-2 font-bold uppercase shadow-lg">
         <div className="flex-shrink-0 flex items-center">
           <Link href="/" passHref>
             <span className="text-black font-bold uppercase cursor-pointer ">Omnimus</span>
