@@ -50,7 +50,7 @@ const specializations = [
 
 const SpecializationSection = () => {
   return (
-    <div>
+    <section>
       <div className="w-full flex items-center font-bold text-lg border-b-4 border-black dark:border-white py-4 mb-8">
         <h2>SPECIALIZATION</h2>
       </div>
@@ -90,7 +90,7 @@ const SpecializationSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
