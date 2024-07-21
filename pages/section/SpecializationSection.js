@@ -11,6 +11,7 @@ const specializations = [
       "We specialize in creating dynamic and responsive websites for your business needs.",
     image: "/agency.jpg",
     link: "/web-development",
+    status: "EXPLORE MORE",
   },
   {
     id: "02",
@@ -21,6 +22,7 @@ const specializations = [
       "Our design solutions are innovative, user-friendly, and tailored to enhance your brand’s visual identity.",
     image: "/agency.jpg",
     link: "/creative-design",
+    status: "EXPLORE MORE",
   },
   {
     id: "03",
@@ -30,8 +32,20 @@ const specializations = [
     details:
       "We offer comprehensive digital marketing services, including SEO, social media marketing, and PPC campaigns, to drive traffic and boost conversions.",
     image: "/agency.jpg",
-    link: "/digital-marketing",
+    link: "/",
+    status: "COMING SOON",
   },
+  {
+    id: "04",
+    title: "Social Media Management",
+    description:
+      "Managing and growing your social media presence across various platforms.",
+    details:
+      "We provide end-to-end social media management services, from content creation to engagement strategies, to help you connect with your audience and enhance your brand's visibility.",
+    image: "/agency.jpg",
+    link: "/",
+    status: "COMING SOON",
+  },  
 ];
 
 const SpecializationSection = () => {
@@ -65,7 +79,7 @@ const SpecializationSection = () => {
               <div className="flex mt-2">
                 <Link href={specialization.link} className="flex hover-container">
                   <span className="font-semibold bg-black text-white dark:bg-white dark:text-black rounded-full px-4 py-2 flex items-center justify-center">
-                    EXPLORE MORE
+                    {specialization.status}
                   </span>
                   <div className="ml-2 flex items-center justify-center h-10 w-10 rounded-full bg-turqoise-gradient arrow-hover">
                     <FaArrowRight className="text-white" />
