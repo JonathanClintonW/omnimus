@@ -1,15 +1,31 @@
 import nodemailer from 'nodemailer';
+import axios from 'axios';
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { name, email, message } = req.body;
+        const { name, email, message, captchaToken } = req.body;
+
+        // Verify reCAPTCHA
+        const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+        const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captchaToken}`;
+
+        try {
+            const response = await axios.post(verificationUrl);
+            const { success } = response.data;
+
+            if (!success) {
+                return res.status(400).json({ message: 'Captcha verification failed' });
+            }
+        } catch (error) {
+            return res.status(500).json({ message: 'Captcha verification error', error: error.message });
+        }
 
         // Configure the email transporter using Nodemailer
         let transporter = nodemailer.createTransport({
             service: 'Outlook',
             auth: {
-                user: 'your-outlook-email@example.com',
-                pass: 'your-email-password'
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
             }
         });
 

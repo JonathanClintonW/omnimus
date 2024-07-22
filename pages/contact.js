@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -6,6 +7,7 @@ const Contact = () => {
         email: '',
         message: ''
     });
+    const [captchaToken, setCaptchaToken] = useState(null);
 
     const handleChange = (e) => {
         setFormData({
@@ -14,14 +16,23 @@ const Contact = () => {
         });
     };
 
+    const handleCaptchaChange = (token) => {
+        setCaptchaToken(token);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (!captchaToken) {
+            alert('Please complete the captcha');
+            return;
+        }
+
         const response = await fetch('/api/sendEmail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(formData)
+            body: JSON.stringify({ ...formData, captchaToken })
         });
 
         if (response.ok) {
@@ -51,6 +62,10 @@ const Contact = () => {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
                 </div>
+                <ReCAPTCHA
+                    sitekey="6LcB6RUqAAAAAPHS8yTEf0EyBg34LZGzHLeaX5rH"
+                    onChange={handleCaptchaChange}
+                />
                 <button type="submit">Send</button>
             </form>
         </main>
