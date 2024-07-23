@@ -8,26 +8,6 @@ First, run the development server:
 npm run dev
 ```
 
-```bash
-npm install axios
-```
-
-```bash
-npm install express-rate-limit
-```
-
-```bash
-npm install nodemailer
-```
-
-```bash
-npm install react-google-recaptcha
-```
-
-```bash
-npm install csrf
-```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
