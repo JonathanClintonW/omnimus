@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DigitalMarketing = () => {
+const Clients = () => {
     return (
         <main className='flex items-center justify-center min-h-[95vh]'>
             <div className='bg-white rounded-md text-black flex flex-col items-center justify-center'>
@@ -11,4 +11,4 @@ const DigitalMarketing = () => {
     )
 }
 
-export default DigitalMarketing;
+export default Clients;

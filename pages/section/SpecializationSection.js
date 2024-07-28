@@ -81,7 +81,7 @@ const SpecializationSection = () => {
                   <span className="font-semibold bg-black text-white dark:bg-white dark:text-black rounded-full px-4 py-2 flex items-center justify-center">
                     {specialization.status}
                   </span>
-                  <div className="ml-2 flex items-center justify-center h-10 w-10 rounded-full bg-turqoise-gradient arrow-hover">
+                  <div className="ml-2 flex items-center justify-center h-10 w-10 rounded-full bg-turqoise-gradient arrow-hover shadow-outside-glow">
                     <FaArrowRight className="text-white" />
                   </div>
                 </Link>

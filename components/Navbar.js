@@ -31,6 +31,7 @@ const Navbar = () => {
           <Link href="/contact" passHref>
             <span className="text-black font-bold uppercase cursor-pointer">Contact</span>
           </Link>
+          
           <DarkModeToggle />
         </div>
         <div className="md:hidden flex items-center">

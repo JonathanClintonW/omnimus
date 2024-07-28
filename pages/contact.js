@@ -13,7 +13,7 @@ const Contact = () => {
     return (
         <main className='flex items-center justify-center h-[calc(100vh-94px)]'>
             <div className='bg-white p-2 rounded-md shadow-[0_10px_20px_rgba(0,0,0,0.25)]'>
-                <h1 className='bg-turqoise-gradient rounded-md py-4 px-8 font-bold text-3xl text-center text-white'>CONTACT US</h1>
+                <h1 className='bg-turqoise-gradient rounded-md py-4 px-8 font-bold text-3xl text-center text-white shadow-outside-glow'>CONTACT US</h1>
                 <p className='text-black font-semibold text-lg p-4 break-all border-b-2 mb-2'>Get in touch with us for more information</p>
 
                 <div className='text-black flex flex-col gap-2'>

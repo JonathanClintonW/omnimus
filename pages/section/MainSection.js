@@ -18,7 +18,7 @@ const MainSection = () => {
         <div className="flex w-full p-4">
           <Link
             href="/projects"
-            className="bg-turqoise-gradient text-white px-4 py-2 rounded-md font-medium hover:scale-105 transition duration-300"
+            className="bg-turqoise-gradient text-white px-4 py-2 rounded-md font-medium hover:scale-105 transition duration-300 shadow-outside-glow"
           >
             Explore
           </Link>

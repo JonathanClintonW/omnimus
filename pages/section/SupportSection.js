@@ -23,8 +23,8 @@ const SupportSection = () => {
                 <h2>OUR SUPPORT</h2>
             </div>
             <div className="flex flex-col lg:flex-row gap-8 items-center justify-around w-full">
-                {details.map((detail) => (
-                    <div className="bg-transparent shadow-md max-w-md rounded-lg p-4 text-center border-2 border-turqoise hover:border-black dark:hover:border-white transition duration-500">  
+                {details.map((detail, index) => (
+                    <div key={index} className="bg-transparent shadow-outside-glow dark:shadow-inside-glow max-w-md rounded-lg p-4 text-center border-2 border-turqoise hover:border-black dark:hover:border-white transition duration-500">  
                         <h3 className="text-xl font-bold pb-4 mb-2 border-b-2">{detail.title}</h3>
                         <p className="font-semibold">{detail.description}</p>
                     </div>
