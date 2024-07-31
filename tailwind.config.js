@@ -11,7 +11,7 @@ module.exports = {
       boxShadow: {
         custom: '0 10px 20px rgba(0, 0, 0, 0.25)',
         'inside-glow': 'inset 0 0 10px #00a5a7, inset 0 0 20px #003C43',
-        'outside-glow': '0 0 12px #00a5a7',
+        'outside-glow': '-1px 0 12px #00a5a7',
       },
       colors: {
         light_gray: '#B4B4B8',

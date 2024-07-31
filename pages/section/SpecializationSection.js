@@ -9,7 +9,7 @@ const specializations = [
       "Delivering cutting-edge web design and development solutions for a digital-first world.",
     details:
       "We specialize in creating dynamic and responsive websites for your business needs.",
-    image: "/agency.jpg",
+    image: "/web-development.jpg",
     link: "/web-development",
     status: "EXPLORE MORE",
   },
@@ -20,7 +20,7 @@ const specializations = [
       "Creating visually compelling designs that captivate and engage your audience.",
     details:
       "Our design solutions are innovative, user-friendly, and tailored to enhance your brand’s visual identity.",
-    image: "/agency.jpg",
+    image: "/creative-design.jpg",
     link: "/creative-design",
     status: "EXPLORE MORE",
   },
@@ -42,7 +42,7 @@ const specializations = [
       "Managing and growing your social media presence across various platforms.",
     details:
       "We provide end-to-end social media management services, from content creation to engagement strategies, to help you connect with your audience and enhance your brand's visibility.",
-    image: "/agency.jpg",
+    image: "/social-media.jpg",
     link: "/",
     status: "COMING SOON",
   },  
