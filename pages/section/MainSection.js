@@ -30,9 +30,8 @@ const MainSection = () => {
             The ideas that improve your products
           </h2>
           <p className="font-medium text-sm text-dark_gray dark:text-light_gray">
-            We provide cutting-edge web development and design solutions to
-            help you achieve your business goals and elevate your online
-            presence.
+            Our agency provides innovative solutions for your company's
+            challenges, ensuring your business thrives in the digital landscape.
           </p>
         </div>
       </div>
