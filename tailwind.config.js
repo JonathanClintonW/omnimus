@@ -24,6 +24,8 @@ module.exports = {
       },
       backgroundImage: {
         'turqoise-gradient': 'linear-gradient(to right, #00a5a7, #003C43)',
+        'light-radial-gradient': 'radial-gradient(circle, #00a5a7 0%, rgba(0,60,67,0) 35%)',
+        'dark-radial-gradient': 'radial-gradient(circle, #003C43 0%, rgba(0,0,0,0) 35%)',
       },
     },
   },

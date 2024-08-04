@@ -16,6 +16,10 @@
   }
 }
 
+.radial-gradient {
+  background: radial-gradient(circle, #003C43 0%, rgba(0,0,0,1) 35%);
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -36,6 +40,14 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  .radial-gradient-light {
+    @apply bg-light-radial-gradient;
+  }
+
+  .dark .radial-gradient-dark {
+    @apply bg-dark-radial-gradient;
   }
 }
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MainSection = () => {
   return (
-    <section className="grid md:grid-cols-2 md:px-8 py-12 justify-between min-h-[95vh]">
+    <section className="grid md:grid-cols-2 md:px-8 py-12 justify-between min-h-[95vh] transition-background duration-500 radial-gradient-light dark:radial-gradient-dark">
       <div className="flex flex-col items-start justify-start">
         <h3 className="font-bold md:text-2xl pl-1 text-gradient-turquoise">
           OMNIMUS
