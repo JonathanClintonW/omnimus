@@ -1,11 +1,13 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Head from 'next/head';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
+      <SpeedInsights />
       <Head>
         <link rel="icon" href="/favicon.png" />
         <title>Omnimus</title>
