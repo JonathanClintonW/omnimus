@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 const specializations = [
   {
@@ -65,9 +66,11 @@ const SpecializationSection = () => {
               <h2 className="font-bold text-2xl">{specialization.title}</h2>
             </div>
             <div className="flex items-center justify-center">
-              <img
+            <Image
                 src={specialization.image}
                 alt={specialization.title}
+                width={400}  // You can adjust the width based on your design needs
+                height={300} // You can adjust the height based on your design needs
                 className="w-full h-auto max-h-[400px] object-cover"
               />
             </div>
